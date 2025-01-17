@@ -29,6 +29,13 @@ font-family: Sahel;
 background-color:purple;
 }
 
+.marq1 {
+marquee-style:scroll;
+marquee-direction:forward;
+marquee-play-count:4;
+marquee-speed:100;
+}
+
 .form {
 width:390px;
 border:6px double red;
@@ -36,7 +43,7 @@ border-radius:15pt;
 text-align:justify;
 font-family: irsbold;
 font-size: 16px;
-
+text-decoration:none;
 }
 .form-div {
 margin:5px;
@@ -53,11 +60,11 @@ font-size:14px;
 }
 .form22 {
 width:390px;
-border:2px solid darkblue;
+border:6px ridge brown;
 border-radius:5px;
 font-family: vazirbd;
 font-size:14px;
-height:50px;
+height:70px;
 }
 
 .form2 > table {
@@ -181,7 +188,7 @@ text-align:center;
 font-size:22px;
 }
 .t-bank {
-background-color:white;
+
 color:brown;
 font-family:irsblack;
 border:1px solid black;
@@ -197,7 +204,7 @@ text-align:center;
 .btnn {
 font-family: irsblack;
 font-size: 20px;
-width: 120px;
+width: 180px;
 }
 .btn {
 border:1px solid red;
@@ -207,9 +214,14 @@ width:350px;
 margin: 5px;
 font-family: irsbold;
 font-size: 22px;
+
 }
 
+#marq {
+marquee-direction:forward;
+marquee-style:alternate;
 
+}
 
 
 header {
@@ -221,6 +233,49 @@ font-family: vazirbd;
 margin-top: 30px;
 }
 
+.bank_bt {
+width:120px;
+height:125px;
+margin:2px;
+font-size:15px;
+}
+
+//✱✱✱✱✱✱ LINK ✱✱✱✱✱✱//
+a:link {
+    background-color: red;
+    text-decoration: none;
+    color:green;
+}
+/* حالت لینک دیده شده */
+a:visited {
+    background-color: gold;
+    text-decoration: none;
+    color: black;
+}
+/* حالت لینک فعال */
+a:hover {
+    background-color: green;
+    text-decoration: none;
+    color: red;
+}
+/* حالت لینک در لحظه ای که روی آن کلیک می کنیم */
+a:active {
+    background-color: red;
+    text-decoration: none;
+}
+ .aa {
+ list-style:square;
+ list-style-type:circle;
+ list-style-position:outside;
+ list-style-image:url("bank/ay.png");
+ animation-delay:2000;
+ animation-direction:normal;
+ animation-duration:;
+ animation-fill-mode:;
+ animation-iteration-count:inherit;
+ animation-play-state:running;
+ animation-timing-function:linear;
+ }
 
 //⛔⛔⛔⛔⛔⛔⛔⛔⛔//
 
