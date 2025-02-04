@@ -21,6 +21,7 @@
 <meta name="viewport" content="width=device-width">
  <link rel="stylesheet" type="text/css" href="./../../css/style.css">
   <link rel="stylesheet" type="text/css" href="./../../css/tamin2.css">
+  <link rel="stylesheet" type="text/css" href="./../../css/slide.css">
  <link rel="stylesheet" type="text/css" href="./../../fonts/all.css">
  <link rel="stylesheet" type="text/css" href="./../../fonts/icofont.min.css">
   <link rel="stylesheet" type="text/css" href="./../../fonts/fa.min.css">
@@ -35,9 +36,9 @@
 <script type="text/javascript" src="./../../js/tarikh.js"></script>
 </head>
 <body>
- <button onclick="location.href='./../../index.html';" class="btn normal btnn" style="font-family:vazirbd" >بازگشت</button>
- <center><br>
-  <div class="form22 bg-dark" >
+ <center>
+ 
+  <!--div class="form22 bg-dark" >
    <li>
     <p id="f2tr2"   style="text-align:right">
 بانک‌کارآفرین(های‌بانک)
@@ -45,36 +46,96 @@
    </li>
   </div>
 
-   <img class="img-f2tr2" src="logo.png" style="width:100px; margin-top: -80px;margin-right: -180px" >
-<br>
-  <marquee behavior="" id="mrq" direction="up" vspace="500"  height="300px" loop="loop" contenteditable="true" scrolling="yes" scrollamount="10" scrolldelay="1" style="border: 5px ridge brown" >
+   <img class="img-f2tr2" src="logo.png" style="width:100px; margin-top: -80px;margin-right: -180px" -->
+
+  <!--marquee behavior="" id="mrq" direction="up" vspace="500"  height="300px" loop="loop" contenteditable="true" scrolling="yes" scrollamount="10" scrolldelay="1" style="border: 5px ridge brown" >
   <center>
    <img src="bka1.jpg" width="390px" style="margin-top:20px" >
    <img src="bka2.jpg" width="390px" style="text-align:center"  align="center"  style="margin-top:20px" >
    <img src="bka3.jpg" width="390px" style="text-align:center"  align="center"  style="margin-top:20px" >
    <img src="bka4.jpg" width="380px" style="text-align:center"  align="center"  style="margin-top:20px" >
    <img src="logo.png" width="250px" style="text-align:center"  align="center"  style="margin-top:20px" >
-  </marquee>
+  </marquee-->
 
   <br>
-  <div class="form3 bg-dark" >
-   <table>
-    <tr>
-     <th>فهرست</th>
-     <td>حسابهای این بانک</td>
-    </tr>
-   </table>
-   <div class="acc-info" style="margin-top:15px; margin-bottom: 20px" >
-    <div class="theme-tamin" >
-     <button onclick="location.href='bka1.html';" class="normal" id="btn-menu" style="margin-top:15px" >حساب سپرده نیک‌آفرین</button>
-     <button onclick="location.href='bka2.html';" class="blue" id="btn-menu" >حساب پس‌انداز نیک‌آفرین</button>
-     <button onclick="location.href='bka3.html';" class="normal" id="btn-menu" >حساب سپرده HiBank</button>
-     <button onclick="location.href='bka4.html';" class="blue" id="btn-menu" >حساب پس‌انداز HiBank</button>
-     <!--button onclick="location.href='bmi5.html';" class="button red" id="btn-menu" >حساب سپرده موسسه نور</button>
-     <button onclick="location.href='bmi6.html';" class="tamin-button-danger" id="btn-menu" >حساب پس‌انداز دوم</button-->
-    </div>
-   </div>
-  </div>
+	<div class="form3 bg-dark" id="vazirbold" >
+	 <div class="theme-tamin" >
+	  <div style="color:white;width:100px;border:1px solid white;font-weight:bold" >
+	 ⚏⚏⚏⚏⚏⚏⚏
+	  </div>
+	  <div class="acc-info" >
+	 
+	   <div class="top-head bg-success" style="padding:5px"  >
+	    <div align="right" >
+	    <a href="" style="margin-top:5px;width:80px" align="center">
+	     <i class="fa fa-home"  width="80px"  style="width:40px;text-align:center;margin-right:5px" align="center" ></i>
+	    </a>
+	     <b id="sahelblack" style="font-size:20px;color:white" >
+فهرست حساب‌های بانک
+	     </b>
+	    </div>
+	   </div>
+	   
+	   <div class="bank-head" align="right"  >
+	    <img src="logo.svg" width="55px"  align=""  style="margin-top:-10px; margin-right:10px" >
+	    <span style="margin-right:10px;font-size:45px" id="irnas"  >
+	    بانک کارآفرین
+	    </span>
+	   </div>
+	   
+	   <div class="banner" >
+	    <p>1</p>
+
+		
+	<!-- ️✴️SLIDE IMG✴️  --
+		<div class="slideshow-container" dir="ltr" >
+		
+		<div class="mySlides">
+		<div class="numbertext">1 / 3</div>
+		<img src="hb1.jpg" style="width:100%">
+		<div class="text">Caption Text</div>
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">2 / 3</div>
+		<img src="hb2.jpg" style="width:100%">
+		<div class="text">Caption Two</div>
+		</div>
+		
+		<div class="mySlides">
+		<div class="numbertext">3 / 3</div>
+		<img src="hb3.jpg" style="width:100%">
+		<div class="text">Caption Three</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+		
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	<!-- ️✴️SLIDE IMG✴️  -->
+		
+		
+	   </div>
+	   
+	   <div class="banner" >
+		<button onclick="location.href='bka1.html';" class="normal" id="btn-menu" style="margin-top:15px" >حساب سپرده نیک‌آفرین</button>
+		<button onclick="location.href='bka2.html';" class="blue" id="btn-menu" >حساب پس‌انداز نیک‌آفرین</button>
+		<button onclick="location.href='bka3.html';" class="normal" id="btn-menu" >حساب سپرده HiBank</button>
+		<button onclick="location.href='bka4.html';" class="blue" id="btn-menu" >حساب پس‌انداز HiBank</button>
+	   </div>
+	  </div>
+	  <div>
+	   <img src="./../../media/home.png" width="80px" style="" >  
+	  </div>
+	 </div>
+ 	</div>
  
  <header class="bg-secondary">
   <div class="theme-tamin" >
@@ -84,7 +145,7 @@
  </center>
  
 </body>
-<script src="./data.js" ></script>
+<script src="./../../js/slide.js" ></script>
 <script src="./../../js/jquery.slim.min.js" ></script>
 <script src="./../../js/4/bootstrap.bundle.min.js"></script>
 <script src="./../../js/5/bootstrap.bundle.min.js"></script>
