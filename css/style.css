@@ -89,9 +89,9 @@ text-align:center;
 	}
 	.img-f2tr2 {
 	position:absolute;
-	width:80px;
-	margin-top:-65px;
-	margin-right:20px;
+	width:110px;
+	margin-top:-75px;
+	margin-right:-190px;
 	margin-bottom:20px;
 	}
 	#f2th {
@@ -111,6 +111,13 @@ text-align:center;
 	font-family:irsbold;
 	}
 
+footer {
+width:390px;
+height:80px;
+
+
+}
+
 .form3 {
 border:1px solid #256E91;
 border-top-left-radius: 20px;
@@ -121,6 +128,7 @@ width:350px;
 padding-top:15px;
 padding-bottom:15px;
 height:700px;
+
 }
 	.form3 table {
 	text-align:center;
@@ -145,12 +153,70 @@ height:700px;
 		font-size:24px;
 		margin:5px;
 		}
+.sms {
+width:310px;
+border:3px ridge red;
+border-radius:10px;
+text-align:right;
+font-family:vazirbd;
+font-size:14px;
+}
+.form4 {
+border:3px solid #256E91;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+margin-top:50px;
+margin-right:-10px;
+width:370px;
+background-color:lightgray;
+height:auto;
+}
+ .form4 > .milli {
+ width:360px;
+ border:2px solid red;
+ height:200px;
+ }
+ .form4 > table {
+ width:350px;
+ }
+ .form4 .thr {
 
+ }
+ .form4 .tdr{
+ 
+ }
+ .form4 .thr > th {
+  font-size:14px;
+  font-family:irsbold;
+  text-align:center;
+  color:gold;
+  border:1px solid black;
+ }
+ .form4 .thr > td {
+ font-size:14px;
+ font-family:vazirbd;
+ text-align:center;
+ color:darkblue;
+   border:1px solid black;
+ }
+ .form4 .tdr > td {
+ color:red;
+ font-family:irsblack;
+ font-size:13px;
+ }
+	.f4-tit {
+	position:absolute;
+	margin-top:-40px;
+	color:white;
+	font-size:24px;
+	}
+    
 .sub-acc {
 text-align:right;
 margin:10px;
 font-size:18px;
 color: yellow;
+
 }
 .acc-info {
 flex: 0 0 auto;
@@ -161,6 +227,7 @@ height:550px;
 background-color:lightyellow;
 margin-top:15px;
 margin-bottom: 20;
+
 }
 .t-mosht {
 background-color:lightgreen;
@@ -356,3 +423,92 @@ a:active {
 .copied:after {
     content: attr(title);
 }
+
+
+.bank {
+width: 90%;
+font-size:17px;
+height:30px;
+color:brown;
+
+}
+.div-pey {
+width:90%;
+border:2px solid gray;
+border-radius:10px;
+font-size:25px;
+color:lime;
+}
+
+.milli {
+width:360px;
+}
+
+/* <---- RECIPT CODE ----> */
+
+.receipt-title{
+  background-color: #00000050;
+  padding: 20px;
+  margin: auto;
+  border-radius: 0 0 20px 20px;
+  color: white;
+}
+.receipt-body{
+  background: white;
+  margin: 30px auto 50px auto;
+  padding: 40px 20px 20px 20px;
+  border-radius: 20px 20px 0 0;
+}
+.receipt-divider{
+  height: 1px;
+  margin: 20px 0;
+  background-image: linear-gradient(to right, #615B5B 50%, transparent 50%), linear-gradient(to right, #615B5B 50%, transparent 50%);
+  background-position: left top, left bottom, left top, right top;
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 20px 5px, 20px 5px;
+  position: relative;
+}
+.receipt-divider::before,
+.receipt-divider::after{
+    content: "";
+    background-color: var(--receipt-base-color);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 100%;
+    margin-top: -15px;
+}
+.receipt-divider::before{
+    right: -35px;
+}
+.receipt-divider::after{
+    left: -35px;
+}
+.receipt-bottom{
+  position: relative;
+  bottom: -35px;
+  border-top: 30px dotted var(--receipt-base-color);
+}
+.receipt-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.receipt-row :nth-child(2){
+    border-top: 1px dashed #A8A8A8;
+    width: max-content;
+    align-self: center;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+.receipt-head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.receipt-head img{l
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* <---- RECIPT CODE ----> */
