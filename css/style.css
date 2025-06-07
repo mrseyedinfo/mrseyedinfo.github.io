@@ -4,6 +4,18 @@ font-family: vazirbk;
 #vazirbold {
 font-family: vazirbd;
 }
+#vazirmatnbold {
+font-family: VazirmatnBold;
+}
+#vazirmatnexbold {
+font-family: VazirmatnExBold;
+}
+#vazirmatnblack {
+font-family: VazirmatnBlack;
+}
+#vazirmatn {
+font-family: VazirmatnMedium;
+}
 #sahelblack {
 font-family: SahelBlack;
 }
@@ -62,7 +74,7 @@ font-size:14px;
 
 }
 .form22 {
-width:390px;
+width:370px;
 border:6px ridge brown;
 border-radius:5px;
 font-family: vazirbd;
@@ -89,8 +101,8 @@ text-align:center;
 	}
 	.img-f2tr2 {
 	position:absolute;
-	width:110px;
-	margin-top:-75px;
+	width:100px;
+	margin-top:-90px;
 	margin-right:-190px;
 	margin-bottom:20px;
 	}
@@ -105,6 +117,7 @@ text-align:center;
 	font-family: vazirbd;
 	text-align:center;
 	font-size:20px;
+	align-self:;
 	}
 	#f2tr1 {
 	color: darkblue;
@@ -130,6 +143,7 @@ padding-bottom:15px;
 height:700px;
 
 }
+
 	.form3 table {
 	text-align:center;
 	padding:10px;
@@ -220,12 +234,24 @@ color: yellow;
 }
 .acc-info {
 flex: 0 0 auto;
-width: 90%;
+width: 93%;
 border:1px solid white;
 border-radius: 10px;
-height:550px;
+height:auto;
 background-color:lightyellow;
 margin-top:15px;
+margin-bottom: 20;
+
+}
+.acc-info2 {
+flex: 0 0 auto;
+width: 93%;
+border:1px solid white;
+border-top-left-radius:80px;
+border-top-right-radius:80pt;
+height:auto;
+
+margin-top:0;
 margin-bottom: 20;
 
 }
@@ -307,7 +333,7 @@ border-radius:10px;
 #marq {
 marquee-direction:forward;
 marquee-style:alternate;
-
+width:350p;
 }
 .banner {
 width:95%;
@@ -442,6 +468,7 @@ color:lime;
 
 .milli {
 width:360px;
+border-radius:80pt;
 }
 
 /* <---- RECIPT CODE ----> */
@@ -512,3 +539,101 @@ width:360px;
 }
 
 /* <---- RECIPT CODE ----> */
+
+/* <---- HELP  ----> */
+.form3-2 {
+border:4px ridge #256E91;
+border-top:1px solid black;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+width:380px;
+padding-top:10px;
+padding-bottom:10px;
+height:auto;
+}
+
+.div-head {
+	font-family:irsblack;
+	font-size:20px;
+	color:white;
+	text-align:justify;
+	width:95%;
+	border:1px solid gold;
+	border-radius:10px;
+	padding:5px;
+	}
+.bank {
+border:1px solid darkblue;
+font-family:irsblack;
+font-size:18px;
+}
+.bank  .th {
+background-color:black;
+color:gold;
+text-align:center;
+}
+.bank  .td {
+background-color:lightyellow;
+text-align:center;
+width:250px;
+color:darkblue;
+font-family:irsbold;
+font-size:17px;
+}
+.bank .tr {
+border:1px solid brown;
+}
+.countdown {
+width:350px;
+border:2px ridge gold;
+background-color:teal;
+padding:5px;
+margin-top:3px;
+border-radius:20px;
+}
+	.countdown > table {
+				text-align:center;
+
+				}
+	.countdown > table > thead {
+						width:100%;
+						}
+	.countdown > table > thead > tr {
+								border:1px solid yellow;
+								color:white;
+								font-family:irsblack;
+								font-size:28px;
+								width:100%;
+								background-color:orange;
+								color:black;
+								}
+	.countdown > table > tbody > tr > th {
+									font-family:irsblack;
+									font-size:22px;
+									background-color:black;
+									color:yellow;
+			
+									}
+	.countdown > table > tbody > tr > td {
+									font-family:led07;
+									font-size:50px;
+									background-color:black;
+					
+									width:40px;
+									}
+	.countdown > table > tbody {         <th colspan="3" >اطلاعات حساب</th>
+						}
+	.countdown > table > tbody > tr {
+								border:1px solid red;
+								}
+
+.countdown > table > tfoot > tr {
+							border:1px solid yellow;
+							color:white;
+							font-family:irsblack;
+							font-size:28px;
+							width:100%;
+							background-color:orange;
+							color:black;
+							animation:;
+							}

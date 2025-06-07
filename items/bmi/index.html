@@ -37,23 +37,45 @@
 <body>
  <button onclick="location.href='./../../index.html';" class="btn normal btnn" style="font-family:vazirbd" >بازگشت</button>
  <center><br>
+
   <div class="form22 bg-dark" >
    <li>
     <p id="f2tr2"   style="text-align:right">
-بانک صادرات ایران
+بانک ملـی ایـران
     </p>
    </li>
   </div>
 
    <img class="img-f2tr2" src="logooo.png" >
-  <marquee behavior="" id="mrq" direction="up" vspace="500"  height="300px" loop="loop" contenteditable="true" scrolling="yes" scrollamount="10" scrolldelay="1">
+
   <center>
-   <img src="head.png" width="390px" style="margin-top:20px" >
-               <img src="bmi.bk.png" width="390px" style="text-align:center"  align="center"  style="margin-top:20px" >
-                           <img src="bmi.bk.png" width="390px" style="text-align:center"  align="center"  style="margin-top:20px" >
-      <img src="logooo.png" width="250px" style="text-align:center"  align="center"  style="margin-top:20px" >
-            <img src="bmi.bk.png" width="390px" style="text-align:center"  align="center"  style="margin-top:20px" >
-  </marquee>
+
+  <script type="text/javascript">
+
+   const axtandis = [
+   		"tandis01.png",
+   		"tandis02.png",
+   		"tandis03.png",
+   		"tandis04.png",
+   		"tandis05.png",
+   		"tandis06.png",
+   		"tandis07.png",
+   		"tandis08.png",
+   		"tandis09.png",
+   		"tandis10.png",
+   		"tandis11.png",
+   		"tandis12.png"
+   	];
+   let index = 0;
+   	function chtandis() {
+   	 index++;
+   	 if(index >= axtandis.length){
+   	 	index = 0;
+   	 }
+   	 document.getElementById("tandis").src = axtandis[index];
+   	}
+   setInterval(chtandis, 100);
+  </script>
   <br>
   <div class="form3 bg-dark" >
    <table>
@@ -62,8 +84,10 @@
      <td>حسابهای این بانک</td>
     </tr>
    </table>
+   
    <div class="acc-info" style="margin-top:15px; margin-bottom: 20px" >
     <div class="theme-tamin" >
+       <img style="width:150px; border:2px double blue; border-radius:20px" src="" id="tandis">   
      <button onclick="location.href='bmi1.html';" class="normal" id="btn-menu" style="margin-top:15px" >حساب پس‌انداز اصلی</button>
      <button onclick="location.href='bmi2.html';" class="blue" id="btn-menu" >حساب پس انداز مهربانی</button>
      <button onclick="location.href='bmi3.html';" class="normal" id="btn-menu" >حساب سپرده</button>
