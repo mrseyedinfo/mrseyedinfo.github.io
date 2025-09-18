@@ -21,7 +21,7 @@ A Persian (Farsi) Font
 </p>
 
 
-~~~css
+```css
 @font-face {
   font-family: Sahel;
   src: url('Sahel.eot');
@@ -48,7 +48,7 @@ A Persian (Farsi) Font
        url('Sahel-MedBlackium.ttf') format('truetype');
   font-weight: 900;
 }
-~~~
+```
 
 ## Install
 

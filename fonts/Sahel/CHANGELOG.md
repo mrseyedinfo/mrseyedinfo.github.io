@@ -1,34 +1,3 @@
-<style>
-
-@font-face {
-  font-family: Sahel;
-  src: url('Sahel.eot');
-  src: url('Sahel.eot?#iefix') format('embedded-opentype'),
-       url('Sahel.woff') format('woff'),
-       url('Sahel.ttf') format('truetype');
-  font-weight: normal;
-}
-      
-@font-face {
-  font-family: Sahel;
-  src: url('Sahel-Bold.eot');
-  src: url('Sahel-Bold.eot?#iefix') format('embedded-opentype'),
-       url('Sahel-Bold.woff') format('woff'),
-       url('Sahel-Bold.ttf') format('truetype');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Sahel;
-  src: url('Sahel-Black.eot');
-  src: url('Sahel-Black.eot?#iefix') format('embedded-opentype'),
-       url('Sahel-Black.woff') format('woff'),
-       url('Sahel-MedBlackium.ttf') format('truetype');
-  font-weight: 900;
-}
-</style>
-<body dir="rtl" style="font-family: Sahel; font-color: gold;">
-
 تغییرات فونت ساحل
 =================
 
@@ -100,7 +69,6 @@
 
 نسخه ۱.۰.۰-آلفا
 ---------------
-*۱ مرداد ۱۳۹۵*
+۱ مرداد ۱۳۹۵
 
 - اولین نسخه
-</body>
