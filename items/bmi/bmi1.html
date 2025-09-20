@@ -25,8 +25,17 @@
  <link rel="stylesheet" type="text/css" href="./../../fonts/icofont.min.css">
   <link rel="stylesheet" type="text/css" href="./../../fonts/fa.min.css">
  <link rel="stylesheet" type="text/css" href="./../../fonts/fonts.css">
+  <link rel="stylesheet" type="text/css" href="./../../fonts/bs icons/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="./../../css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+  <script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+      $("p").fadeOut(1000);
+    });
+  });
+  </script>
 
 </head>
 <style type="text/css">
@@ -35,7 +44,7 @@ width:390px;
 height:60px;
 border:3px groove gray;
 border-radius:3px 3px 15px 15px;
-background-image:linear-gradient(0deg, navy, lightblue);
+background-image:linear-gradient(180deg, blue, black);
 }
 
 .slide {
@@ -43,10 +52,67 @@ background-image:linear-gradient(0deg, navy, lightblue);
 }
 	.slide .kadr {
 			position:absolute;
-			width:372px;
-			
+			width:378px;
+			height:240px;
+			margin-right:-375px;
 			}
+
+.dor1 {
+width:380px;
+border: 2px solid gray;
+border-radius:6pt;
+min-height:300px;
+}
+	.dor1 .dor2 {
+			width:340px;
+			border:1px groove silver;
+			border-radius:3pt;
+			min-height:260px;
+			margin:-30px 20px 10px 20px;
+			background-image:linear-gradient(180deg, green, white, white, red);
+			}
+	.dor1 .dor2 .bt {
+			border:1.5px groove black;			border-radius:10px 10px 3px 3px;
+			font-family:farnaz;
+			font-size:25px;
+			margin-top:5px;
+			height:45px;
+			}
+	.dor1 .dor2 .bt1 {
+			width:270px;
+			margin-right:-2.5px;
+			height:43px;
+			border-radius:20px 2px 2px 2px;
+			}
+	.dor1 .dor2 .bt2 {
+			width:42px;
+			border-radius:2px 20px 2px 2px;
+			height:42px;
+			}
+	.dor1 .dor2 .line {
+			width:99%;
+			border:1px ridge yellow;
+			min-height:30px;
+			border-radius:4px;
+			background-color:black;
+			color:white;
+			font-family:tanha;
+			font-weight:1000;
+			font-size:20px;
+			margin-top:20px;
+			}
+.myalert {
+			width:93%;
+			min-height:40px;
+			border:2px solid black;
+			border-radius:3px 3px 10px 10px;
+			margin-top:1px;
+			background-color:lightyellow;
+			font-family:irsblack;
+			font-size:20px;
+}
 </style>
+
 <body>
  <center>
  <header>
@@ -55,18 +121,61 @@ background-image:linear-gradient(0deg, navy, lightblue);
  </p>
  </header>
 
+
  <div class="slide mrg10" >
-  <img src="head.png" width="370px" > 
+  <marquee style="width:370px;height:220px;margin-top:10px" direction="up">
+  <img src="bmi0.jpg" width="370px" > 
+    <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
+        <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
+  </marquee>
   <img class="kadr" src="./../../media/frame1.webp" >
  
+ </div>
+</center>
+ <div class="dor1 b-black" >
+  <p class="fs36 titr1 lime pd10 center" >
+  حساب‌های بانک
+  </p>
+  <div class="dor2 b-silver">
+  
+	<div class="line center" >
+	حساب‌های پس‌انداز قرض‌الحسنه
+	</div>
+	<center>
+	 <div class="btn bt bt2" ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+       <button class="btn btn-danger bt bt1" id="btnk1" >حساب پس‌انـداز ✷ 1</button>
+       <div class="myalert" id="k1" >
+       
+
+        <i class="bi-credit-card right fs25 red" ></i>
+کارت
+        <br>
+        کارت: ندارد
+        </div>
+	 <button class="btn btn-warning bt bt2" ><i class="bi-info-circle-fill fs30 text-danger" style="margin-right:-2px" ></i></button>
+      <button class="btn btn-warning bt bt1" >حساب پس‌انـداز ✷ 2</button>
+      
+	<div class="line" >
+	حساب‌های سپـرده کوتاه‌مدت
+	</div>
+         <button class="btn btn-primary bt bt1" >حساب سپـرده کوتاه‌مدت✷ 1</button>
+         <button class="btn btn-success bt" >حساب سپـرده کوتاه‌مدت✷ 2</button>
+         <button class="btn btn-info bt" >حساب سپـرده کوتاه‌مدت✷ 3</button>
+         <button class="btn btn-dark bt" >حساب سپـرده کوتاه‌مدت✷ 4</button>
+	<div class="line" >
+	حساب‌های ارزی
+	</div>
+         <button class="btn btn-success bt" >حساب ارزی دلار</button>
+         <button class="btn btn-warning bt" >حساب ارزی یـورو</button>
+  </div>
  </div>
 
 
 
-
-<br>
 <hr>
  </center>
+ 
+ 
 </body>
 <!--body>
   <button onclick="location.href='./../../index.html';" class="btn normal btnn" style="font-family:vazirbd" >بازگشت</button>
