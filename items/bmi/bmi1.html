@@ -21,22 +21,13 @@
 <meta name="viewport" content="width=device-width">
 
 
- <link rel="stylesheet" type="text/css" href="./../../css/mrseyed.css">
+<link rel="stylesheet" type="text/css" href="./../../css/mrseyed.css">
  <link rel="stylesheet" type="text/css" href="./../../fonts/icofont.min.css">
   <link rel="stylesheet" type="text/css" href="./../../fonts/fa.min.css">
  <link rel="stylesheet" type="text/css" href="./../../fonts/fonts.css">
   <link rel="stylesheet" type="text/css" href="./../../fonts/bs icons/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="./../../css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-  <script>
-  $(document).ready(function(){
-    $("#btn1").click(function(){
-      $("p").fadeOut(1000);
-    });
-  });
-  </script>
-
+<script type="text/javascript" src="./../../js/jquery.min.js"></script>
 </head>
 <style type="text/css">
 header {
@@ -50,45 +41,59 @@ background-image:linear-gradient(180deg, blue, black);
 .slide {
 
 }
-	.slide .kadr {
+	.kadr {
 			position:absolute;
 			width:378px;
-			height:240px;
-			margin-right:-375px;
+			height:280px;
+			margin-top:-240px;
+			margin-right:-190px;
 			}
 
 .dor1 {
-width:380px;
+width:390px;
 border: 2px solid gray;
 border-radius:6pt;
 min-height:300px;
 }
 	.dor1 .dor2 {
-			width:340px;
+			width:370px;
 			border:1px groove silver;
 			border-radius:3pt;
 			min-height:260px;
-			margin:-30px 20px 10px 20px;
+			margin:-30px 10px 10px 10px;
 			background-image:linear-gradient(180deg, green, white, white, red);
 			}
-	.dor1 .dor2 .bt {
-			border:1.5px groove black;			border-radius:10px 10px 3px 3px;
+	.bt {
+			border:1.5px groove black;
+			border-radius:5px;
 			font-family:farnaz;
 			font-size:25px;
 			margin-top:5px;
-			height:45px;
 			}
-	.dor1 .dor2 .bt1 {
-			width:270px;
-			margin-right:-2.5px;
-			height:43px;
-			border-radius:20px 2px 2px 2px;
-			}
-	.dor1 .dor2 .bt2 {
-			width:42px;
-			border-radius:2px 20px 2px 2px;
-			height:42px;
-			}
+		.bt-black {
+		background-image:linear-gradient(180deg, black, #303030);
+		color:white;
+		}
+		.bt:hover  {
+		background-image:linear-gradient(0deg, white,gray);
+		color:black;
+		}
+		.bt-yellow {
+		background-image:linear-gradient(0deg,orange ,gold);
+		color:black;
+		}
+		.bt-red {
+		background-image:linear-gradient(180deg, red, #330000);
+		color:white;
+		}
+		.bt-green {
+		background-image:linear-gradient(180deg, #00af00,#003300);
+		color:white;
+		}
+		.bt-blue {
+		background-image:linear-gradient(180deg, #3366ff, #000033);
+		color:white;
+		}
 	.dor1 .dor2 .line {
 			width:99%;
 			border:1px ridge yellow;
@@ -101,20 +106,77 @@ min-height:300px;
 			font-size:20px;
 			margin-top:20px;
 			}
-.myalert {
-			width:93%;
-			min-height:40px;
-			border:2px solid black;
-			border-radius:3px 3px 10px 10px;
-			margin-top:1px;
-			background-color:lightyellow;
-			font-family:irsblack;
+.tb1 {
+width:99%;
+}
+	.tb1 > thead > tr {
+			
+			}
+	.tb1 > thead > tr > th {
+			background-color:black;
+			color:yellow;
+			font-family:mehr;
+			font-size:19px;
+			border-bottom:0.5px solid white;
+
+			}
+	.tb1 > thead > tr > td {
+			width:150px;
+			text-align:center;
+			font-family:shabnambold;
+			border:0.5px solid gray;
+			font-size:19px;
+
+			}
+	.tb1 > tbody > tr {
+		text-align:center;
+			}
+	.tb1 > tbody > tr > th {
+			background-color:black;
+			color:lime;
+			font-family:sahelblack;
+			font-size:25px;
+			}
+	.tb1 > tbody > tr > td {
+			text-align:center;
+			font-family:sahelblack;
+			border:1px solid black;
+			font-size:25px;
+			}
+.tb1 > tfoot > tr {
+	text-align:center;
+		}
+.tb1 > tfoot > tr > th {
+			background-color:black;
+			color:yellow;
+			font-family:mehr;
 			font-size:20px;
+			border:1px solid black;
+			
+}
+.tb1 > tfoot > tr > td {
+		text-align:center;
+		font-family:irsblack;
+		border:1px solid black;
+		font-size:17px;
+		width:220px;
+		}
+.cp:hover {
+background-color:yellow;
+}
+
+.but-div {
+width:100%;
+padding:2px;
+background-image:linear-gradient(180deg, #b3cccc, #669999);
+border:2px groove black;
+border-radius:5px;
 }
 </style>
 
-<body>
+<body onshow="">
  <center>
+ 
  <header>
  <p class="fs36 white titr2 pd5" >
  بانک ملی ایران
@@ -123,50 +185,163 @@ min-height:300px;
 
 
  <div class="slide mrg10" >
-  <marquee style="width:370px;height:220px;margin-top:10px" direction="up">
-  <img src="bmi0.jpg" width="370px" > 
-    <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
-        <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
-  </marquee>
-  <img class="kadr" src="./../../media/frame1.webp" >
- 
+  <div id="chng1" onclick="change1()">
+
+  <img src="logo.png" width="250px" style="" > 
  </div>
+ <div id="chng2" onclick="change2()" hidden="hidden" >
+  <img src="0288.jpg" width="350px">  
+ </div>
+  <img class="kadr" src="./../../media/frame1.webp" >
+ </div>
+ <hr>
+ <hr>
 </center>
+<center>
  <div class="dor1 b-black" >
   <p class="fs36 titr1 lime pd10 center" >
-  حساب‌های بانک
+حساب پس انداز - اصلی
   </p>
   <div class="dor2 b-silver">
   
 	<div class="line center" >
-	حساب‌های پس‌انداز قرض‌الحسنه
+دارنده حساب: سیدمحمد موسوی
 	</div>
+	<br>
 	<center>
-	 <div class="btn bt bt2" ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
-       <button class="btn btn-danger bt bt1" id="btnk1" >حساب پس‌انـداز ✷ 1</button>
-       <div class="myalert" id="k1" >
-       
+	<table class="tb1" >
+	 <thead>
+	  <tr>
+	   <th style="background-color:;">
+	    <img src="./../../media/svg/cusnum.svg" width="25px" >
+	   </th>
+	   <th>نام مستعار</th>
+	   <td colspan="2" class="b-green0">حساب اصلی</td>
+	   <th style="background-color:" ></th>
+	  </tr>
+	  <tr>
+	   <th style="background-color:;">
+	    <img src="./../../media/svg/01.svg" width="25px" >
+	   </th>
+	   <th>نوع حساب</th>
+	   <td colspan="2" class="b-green9" >قرض‌الحسنه پس‌انداز عادی</td>
+	   <th style="background-color:" ></th>
+	  </tr>
+	  <tr>
+	   <th style="background-color:;">
+	    <img src="./../../media/svg/03.svg" width="25px" >
+	   </th>
+	   <th>شماره مشتری</th>
+	   <td class="b-green8" id="cus" >0302330238</td>
+	   <th class="cp" id="cp-cus" onclick="copyFunc('#cus')">
+	    <img src="./../../media/svg/copy.svg" width="25px"> 
+	   </th>
+	   <th style="background-color:" ></th>
+	  </tr>
+	  <tr>
+	   <th style="background-color:;">
+	    <img src="./../../media/svg/safebox.svg" width="25px" >
+	   </th>
+	   <th>شماره حساب</th>
+	   <td class="b-green7" id="acc" >0320560877000</td>
+	   <th class="cp" id="cp-acc" onclick="copyFunc('#acc')">
+	    <img src="./../../media/svg/copy.svg" width="25px"> 
+	   </th>
+	   <th style="background-color:" ></th>
+	  </tr>
+	  <tr>
+	   <th style="background-color:;">
+	    <img src="./../../media/svg/sheba.png" width="30px" >
+	   </th>
+	   <th>شماره شبـا</th>
+	   <td class="b-green4" id="sheba" >IR530170000000320560877000</td>
+	   <th class="cp" onclick="copyFunc('#sheba')">
+	    <img src="./../../media/svg/copy.svg" width="25px"> 
+	   </th>
+	   <th style="background-color:" ></th>
+	  </tr>
+	  <tr>
+	   <th style="background-color:;">
+	    <img src="./../../media/svg/bank.png" width="25px" >
+	   </th>
+	   <th>نام شعبه</th>
+	   <td colspan="2" class="b-green3 white" >شهیدپورجعفری گلباف</td>
+	   <th style="background-color:" ></th>
+	  </tr>
+	 </thead>
+	</table>
+	
+<br>
 
-        <i class="bi-credit-card right fs25 red" ></i>
-کارت
-        <br>
-        کارت: ندارد
-        </div>
-	 <button class="btn btn-warning bt bt2" ><i class="bi-info-circle-fill fs30 text-danger" style="margin-right:-2px" ></i></button>
-      <button class="btn btn-warning bt bt1" >حساب پس‌انـداز ✷ 2</button>
-      
-	<div class="line" >
-	حساب‌های سپـرده کوتاه‌مدت
+	<table class="tb1"  style="text-align:center" >
+	 <tbody>
+	  <tr>
+	   <th style="width:40px;" >
+		<i class="bi-credit-card-fill fs36 green5" ></i>
+	   </th>
+
+	   <td class="td b-gold"  style="width:100px;font-size:25px;border:1px solid black"  >کارت دارد</td>
+	   <th style="width:40px;" >
+	   		<i class="bi-check-circle-fill fs36 green5" ></i>
+	   </th>
+	   
+	  </tr>
+	 </body>
+	</table>
+	
+		<img src="0288.jpg" width="95%" style="border:2px solid gray;border-radius:10px;margin: 10px 0 10px 0" >
+	
+	<br>
+	<table class="tb1" >
+	 <tfoot>
+	  <tr>
+	   <th style="width:33px;border-bottom:1px solid silver" >
+	    <img src="./../../media/svg/card.svg" width="33px" >
+	   </th>
+	   <th style="width:90px;border-bottom:1px solid silver" >شماره کارت</th>
+	   <td class="b-green0" style="width:150px"  colspan="3" >0288  1348  9981  6037</td>
+	   <p hidden="hidden" id="card"  >6037998113480288</p>
+	   <th style="border-bottom:1px solid silver"  class="cp" id="cp-card" onclick="copyFunc('#card')">
+	    <img src="./../../media/svg/copy.svg" width="25px"> 
+	   </th>
+	  </tr>
+	 </thead>
+	</table>
+	<textarea id="all" hidden="hidden" >g
+*بانک ملی ایران*
+حساب پس‌انداز قرض‌الحسنه پس‌انداز
+پس‌انداز اصلی
+✻صاحب حساب: سیدمحمد موسوی✻
+✱شماره مشتری: 0302330238
+✱شماره حساب: 0320560877000
+✱شماره شبا: IR530170000000320560877000
+✱شعبه: شهیدپورجعفری گلباف
+💳اطلاعات کارت💳
+✅کارت دارد✅
+✱شماره کارت: 6037998113480288
+✱CVV2: 6068
+✱انقضا: 1407/02
+
+	</textarea>
+	<table class="tb1" >
+	 <tfoot>
+	  <tr>
+	  <th style="width:30%" >تاریخ انقضا</th>
+	  <td class="b-green9" >1407/02</td>
+	  <td class="b-green8" >6068</td>
+	  <th style="width:30%" >CVV2</th>
+	  </tr>
+	 </tfoot>
+	</table>
+	<button class="bt bt-yellow w70" onclick="copyFunc('#all')">کپی اطلاعات کامل حساب</button>
+	<hr>
+	<div class="but-div" >
+
+	 <button class="bt bt-red w98" >بازگشت  به صفحه قبل</button>
+	 <button class="bt bt-blue w98" >بازگشت به منوی اصلی</button>
+
 	</div>
-         <button class="btn btn-primary bt bt1" >حساب سپـرده کوتاه‌مدت✷ 1</button>
-         <button class="btn btn-success bt" >حساب سپـرده کوتاه‌مدت✷ 2</button>
-         <button class="btn btn-info bt" >حساب سپـرده کوتاه‌مدت✷ 3</button>
-         <button class="btn btn-dark bt" >حساب سپـرده کوتاه‌مدت✷ 4</button>
-	<div class="line" >
-	حساب‌های ارزی
-	</div>
-         <button class="btn btn-success bt" >حساب ارزی دلار</button>
-         <button class="btn btn-warning bt" >حساب ارزی یـورو</button>
+	</center>
   </div>
  </div>
 
@@ -175,112 +350,7 @@ min-height:300px;
 <hr>
  </center>
  
- 
-</body>
-<!--body>
-  <button onclick="location.href='./../../index.html';" class="btn normal btnn" style="font-family:vazirbd" >بازگشت</button>
- <center><br>
-  <div class="form22 bg-dark" style="" >
-   <li>
-    <p id="f2tr2"   style="text-align:right">
-    بانک ملی ایران
-    </p>
-   </li>
-  </div>
-   <img class="img-f2tr2" src="logooo.png" style="width:110px;margin-top:-90px;margin-right:5px" >
-
-   <img src="head.png" width="390px" style="margin-top:20px" >
-  <hr>
-  <center>
-  <div class="form4 bg-dark" >
-   <table style="margin:5px" >
-    <tr style="text-align:center" >
-     <th id="sahelblack" class="sub-acc" style="color:white" width="100px" >
-      <h4 width="150px" style="color:yellow" >نوع حساب</h4>
-     </th>
-     <th width="300px" class="sub-acc" id="irsblack" >
-      <h4 style="color:white" >پس انداز</h4>
-     </th>
-    </tr>
-   </table>
-   <div class="acc-info" >
-    <table>
-    <tr>
-     <th id="f2th" class="bg-success" width="100px" >شماره مشتری</th>
-     <th class="t-mosht"  width="210px" id="mosht" >0302330238</th>
-     <th>
-      <button class="btn btn-dark" onclick="copyFunc('#mosht')"><i class="icofont icofont-copy"></i></button>
-     </th>
-    </tr>
-     <tr>
-      <th id="f2th" class="bg-warning" width="100px" >شماره حساب</th>
-      <th class="t-hesab"  width="210px" id="hesab" >0320560877000</th>
-      <th>
-      <button class="btn btn-dark" onclick="copyFunc('#hesab')"><i class="icofont icofont-copy"></i></button>
-      </th>
-     </tr>
-     <tr>
-      <th id="f2th" class="bg-info" width="100px" >شماره شبا</th>
-      <th class="t-sheba"  width="210px" id="sheba" >IR530170000000320560877000</th>
-      <th>
-      <button class="btn btn-dark" onclick="copyFunc('#sheba')"><i class="icofont icofont-copy"></i></button>
-      </th>
-     </tr>
-     <tr>
-      <th id="f2th" class="bg-secondary" width="100px" >شعبه</th>
-      <th class="t-bank"  width="210px" colspan=2"" >شهیدپورجعفری گلباف</th>
-      <th>
-
-      </th>
-     </tr>
-    </table>
-    <table>
-     <tr class="bg-dark" >
-     <td style="text-align:left"><i style="font-size:40px;color:gold;" align="left"   class="icofont icofont-card"></i></td>
-      <th colspan="2" class="card-head"  >اطلاعات کارت</th>
-      <td colspan="2" ><i style="font-size:40px;color:gold"  class="icofont icofont-card"></i></td>
-     </tr>
-     <tr>
-      <th class="bg-success" id="f2th" >شماره کارت</th>
-      <td colspan="3" class="t-card" id="CardNum" >6037998113480288</td>
-      <td width="45px" >
-       <button class="btn btn-dark" onclick="copyFunc('#CardNum')"><i class="icofont icofont-copy"></i></button>
-      </td>
-     </tr>
-     <tr>
-      <th width="100px" id="f2th"  class="bg-warning" >تاریخ‌انقضا</th>
-      <td width="100px" class="t-bank" >1407/02</td>
-      <th width="80px" class="t-bank" >6068</th>
-      <td width="80px"  class="bg-danger" id="f2th" colspan="2" >CVV2</td>
-     </tr>
-    </table>
-    <img src="0288.jpg" width="360px"  style="border:2px solid black" >
-    <textarea hidden="hidden" id="all" >
-    *بانک ملی ایران*
-نوع حساب: پس انداز
-صاحب حساب: سیدمحمد موسوی
-شماره حساب: 0320560877000
-شماره شبا:
-IR530170000000320560877000
-شماره کارت:
-6037-9981-1348-0288
-</textarea>
-
-      <button style="font-size:20px;margin:10px; width: 350px; font-family: SahelBlack"  class="btn btn-primary" onclick="copyFunc('#all')">کپی کردن تمام اطلاعات
-
-      </button>
-   </div>
-  </div>
-
-  <header class="bg-secondary">
-  <div class="theme-tamin" >
-  <button onclick="location.href='./index.html';" class="red" style="width:90%;margin:10px"  ><i class="fa fa-home" style="font-size:30px" ><span class="btnn" style="font-size:24px"  >بازگشت به فهـرست اصلی</span></i></button>
-  </div>
-  </header>
- </center>
  <script type="text/javascript">
- console.clear()
- 
  function copyFunc(elemId) {
  
  let that = document.querySelector(elemId);
@@ -293,11 +363,35 @@ IR530170000000320560877000
  
  });
  }
+ var mytimer = setInterval(() => {
+ 		var my = parseFloat (document.getElementById("timer").textContent);
+ 		var my2 = parseFloat (document.getElementById("timer2").textContent);
+ 		
+ 		if (isNaN(my)) my = 0;
+ 		if (isNaN(my2)) my2 = 0;
+ 		
+ 		document.getElementById("timer").innerHTML=my + my2;
+ 	}
  
+ ,1000)
+ 
+ function change1() {
+ document.getElementById("chng1").hidden=true;
+  document.getElementById("chng2").hidden=false;
+ }
  </script>
-</body-->
-<script src="data.js" ></script>
-<script src="./../../js/jquery.slim.min.js" ></script>
-<script src="./../../js/4/bootstrap.bundle.min.js"></script>
-<script src="./../../js/5/bootstrap.bundle.min.js"></script>
-</html>
+ <script type="text/javascript">
+ function cpacc() {
+ alert("محمد")
+ }
+ function cpcus() {
+ alert("مشتری")
+ }
+ function cpsheba() {
+ alert("شبا")
+ }
+ function cpcard() {
+ alert("کارت")
+ }
+ </script>
+</body>
