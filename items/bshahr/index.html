@@ -19,64 +19,448 @@
 <meta http-equiv="Content-Type" content="text/html; charset:utf-8" />
 <meta http-equiv="Content-language" content="fa" />
 <meta name="viewport" content="width=device-width">
- <link rel="stylesheet" type="text/css" href="./../../css/style.css">
-  <link rel="stylesheet" type="text/css" href="./../../css/tamin2.css">
- <link rel="stylesheet" type="text/css" href="./../../fonts/all.css">
+
+
+<link rel="stylesheet" type="text/css" href="./../../css/mrseyed.css">
  <link rel="stylesheet" type="text/css" href="./../../fonts/icofont.min.css">
   <link rel="stylesheet" type="text/css" href="./../../fonts/fa.min.css">
  <link rel="stylesheet" type="text/css" href="./../../fonts/fonts.css">
- <link rel="stylesheet" type="text/css" href="./../../css/5/bootstrap.rtl.min.css">
-  <link rel="stylesheet" type="text/css" href="./../../css/bootstrapmin.css">
- <link rel="stylesheet" type="text/css" href="./../../css/5/bootstrap-reboot.rtl.min.css">
- <link rel="stylesheet" type="text/css" href="./../../css/5/bootstrap-grid.rtl.min.css">
-<script src="./../../js/jquery.min.js" ></script>
-<script src="./../../js/4/bootstrap.min.js"></script>
-<script src="./../../js/5/bootstrap.min.js"></script>
-<script type="text/javascript" src="./../../js/tarikh.js"></script>
-</head>
-<body>
- <button onclick="location.href='./../../index.html';" class="btn normal btnn" style="font-family:vazirbd" >بازگشت</button>
- <center><br>
-  <div class="form22 bg-dark" >
-   <li>
-    <p id="f2tr2"   style="text-align:right;color:pink">
-بانک شـهــر
-    </p>
-   </li>
-  </div>
-   <img class="img-f2tr2" src="logooo.png" style="margin-right:px;width:100px;margin-top:-85px" >
+  <link rel="stylesheet" type="text/css" href="./../../fonts/bs icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="./../../css/bootstrap.min.css">
 
-   <img src="head.png" width="390px" style="margin-top:20px;margin-bottom:20px" >
-  <br>
-  <div class="form3 bg-dark" >
-   <table>
-    <tr>
-     <th>فهرست</th>
-     <td>حسابهای این بانک</td>
-    <tr>
-   </table>
-   <div class="acc-info" style="margin-top:15px; margin-bottom: 20px" >
-    <div class="theme-tamin" >
-     <button onclick="location.href='#';" class="red" id="btn-menu" style="margin-top:15px" >حساب سپرده کوتاه مدت عادی</button>
-     <button onclick="location.href='#';" class="normal" id="btn-menu" >حساب هواداری استقلال(جاری)</button>
-     <button onclick="location.href='#';" class="orange" id="btn-menu" >حساب سپرده زائـرکارت</button>
-     <!--button onclick="location.href='#';" class="orange" id="btn-menu" >حساب پس‌انداز دوم</button>
-     <button onclick="location.href='#';" class="button red" id="btn-menu" >حساب پس‌انداز دوم</button>
-     <button onclick="location.href='#';" class="tamin-button-danger" id="btn-menu" >حساب پس‌انداز دوم</button-->
-    </div>
-   </div>
-  </div>
+<script type="text/javascript" src="./../../js/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("body").show(function(){
+       $("#bk1").hide();
+       $("#bk2").hide();
+       $("#bk3").hide();
+       $("#bk4").hide();
+       $("#bk5").hide();
+       $("#bk6").hide();
+       $("#bk7").hide();
+       $("#bk8").hide();
+       
+    });
+   $("#btn1").click(function(){
+      $("#bk1").toggle(1000);
+   });
+   $("#btn2").click(function(){
+      $("#bk2").toggle(1000);
+   });
+   $("#btn3").click(function(){
+      $("#bk3").toggle(1000);
+   });
+   $("#btn4").click(function(){
+      $("#bk4").toggle(1000);
+   });
+   $("#btn5").click(function(){
+      $("#bk5").toggle(1000);
+   });
+   $("#btn6").click(function(){
+      $("#bk6").toggle(1000);
+   });
+   $("#btn7").click(function(){
+      $("#bk7").toggle(1000);
+   });
+   $("#btn8").click(function(){
+      $("#bk8").toggle(1000);
+   });
+   
+});
+</script>
+
+</head>
+<style type="text/css">
+header {
+width:390px;
+height:60px;
+border:3px groove gray;
+border-radius:3px 3px 15px 15px;
+background-image:linear-gradient(180deg, blue, black);
+}
+
+.slide {
+
+}
+	.slide .kadr {
+			position:absolute;
+			width:378px;
+			height:240px;
+			margin-right:-375px;
+			}
+
+.dor1 {
+width:380px;
+border: 2px solid gray;
+border-radius:6pt;
+min-height:300px;
+}
+	.dor1 .dor2 {
+			width:340px;
+			border:1px groove silver;
+			border-radius:3pt;
+			min-height:260px;
+			margin:-30px 20px 10px 20px;
+			background-image:linear-gradient(180deg, green, white, white, red);
+			}
+	.dor1 .dor2 .bt {
+			border:1.5px groove black;			border-radius:10px 10px 3px 3px;
+			font-family:farnaz;
+			font-size:25px;
+			margin-top:5px;
+			height:45px;
+			}
+	.dor1 .dor2 .bt1 {
+			width:270px;
+			margin-right:-2.5px;
+			height:43px;
+			border-radius:20px 2px 2px 2px;
+			}
+	.dor1 .dor2 .bt2 {
+			width:42px;
+			border-radius:2px 20px 2px 2px;
+			height:42px;
+			}
+	.dor1 .dor2 .line {
+			width:99%;
+			border:1px ridge yellow;
+			min-height:30px;
+			border-radius:4px;
+			background-color:black;
+			color:white;
+			font-family:tanha;
+			font-weight:1000;
+			font-size:20px;
+			margin-top:20px;
+			}
+.myalert {
+			width:93%;
+			min-height:40px;
+			border:2px solid black;
+			border-radius:3px 3px 10px 10px;
+			margin-top:1px;
+			background-color:lightyellow;
+			font-family:irslight;
+			font-size:16px;
+}
+</style>
+
+<body onshow="">
+ <center>
  
- <header class="bg-secondary">
-  <div class="theme-tamin" >
-   <button onclick="location.href='./../../index.html';" class="red" style="width:90%;margin:10px"  ><i class="fa fa-home" style="font-size:30px" ><span class="btnn" style="font-size:24px"  >بازگشت به فهـرست اصلی</span></i></button>
-  </div>
+ <header>
+ <p class="fs36 white titr2 pd5" >
+ بانک ملی ایران
+ </p>
  </header>
+
+
+
+ <div class="slide mrg10" >
+  <marquee style="width:370px;height:220px;margin-top:10px" direction="up">
+
+    <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
+        <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
+            <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
+                <img src="bmi.bk.png" width="360px" style="margin-right:5px" > 
+            
+  </marquee>
+
+ 
+ </div>
+</center>
+<center>
+ <div class="dor1 b-black" >
+  <p class="fs36 titr1 lime pd10 center" >
+  حساب‌های بانک
+  </p>
+  <div class="dor2 b-silver">
+  
+	<div class="line center" >
+	حساب‌های پس‌انداز قرض‌الحسنه
+	</div>
+	<center>
+	 <div class="btn btn-dark bt bt2" id="btn1"  ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+       <button class="btn btn-danger bt bt1" >حساب پس‌انـداز ✷ 1</button>
+       <div class="myalert" id="bk1" >
+        <table style="text-align:center" >
+         <tr>
+          <th style="width:10px" >
+           <i class="bi-currency-exchange right fs30 red" ></i>
+          </th>
+          <th style="width:130px" >
+شماره حساب
+          </th>
+          <td></td>
+          <td style="width:150px" >
+          0310519555008
+          </td>
+         </tr>
+         <tr>
+          <th style="width:30px" >
+           <i class="bi-credit-card right fs30 red" ></i>
+          </th>
+          <th style="width:100px" >
+کارت
+          </th>
+          <td>
+           <i class="bi-emoji-smile-fill green3 fs25" ></i>
+          </td>
+          <td style="width:200px" >
+6037-9981-1348-0288
+          </td>
+         </tr>
+        </table>
+      
+        </div>
+	 <button class="btn btn-dark bt bt2" id="btn2" ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></button>
+      <button class="btn btn-warning bt bt1" >حساب پس‌انـداز ✷ 2</button>
+      <div class="myalert" id="bk2" >
+       <table style="text-align:center" >
+        <tr>
+         <th style="width:10px" >
+          <i class="bi-currency-exchange right fs30 red" ></i>
+         </th>
+         <th style="width:130px" >
+      شماره حساب
+         </th>
+         <td></td>
+         <td style="width:150px" >
+         0310519555008
+         </td>
+        </tr>
+        <tr>
+         <th style="width:30px" >
+          <i class="bi-credit-card right fs30 red" ></i>
+         </th>
+         <th style="width:100px" >
+      کارت
+         </th>
+         <td>
+          <i class="bi-emoji-frown-fill red fs25" ></i>
+         </td>
+         <td style="width:200px" >
+ندارد
+         </td>
+        </tr>
+       </table>
+            
+       </div>
+	<div class="line" >
+	حساب‌های سپـرده کوتاه‌مدت
+	</div>
+	 <div class="btn btn-dark bt bt2" id="btn3"  ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+         <button class="btn btn-primary bt bt1" >حساب سپـرده کوتاه‌مدت✷ 1</button>
+     <div class="myalert" id="bk3" >
+      <table style="text-align:center" >
+       <tr>
+        <th style="width:10px" >
+         <i class="bi-currency-exchange right fs30 red" ></i>
+        </th>
+        <th style="width:130px" >
+     شماره حساب
+        </th>
+        <td></td>
+        <td style="width:150px" >
+        0310519555008
+        </td>
+       </tr>
+       <tr>
+        <th style="width:30px" >
+         <i class="bi-credit-card right fs30 red" ></i>
+        </th>
+        <th style="width:100px" >
+     کارت
+        </th>
+        <td>
+         <i class="bi-emoji-smile-fill green fs25" ></i>
+        </td>
+        <td style="width:200px" >
+     6037-9981-1348-0288
+        </td>
+       </tr>
+      </table>
+           
+      </div>
+	 <div class="btn btn-dark bt bt2" id="btn4"  ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+         <button class="btn btn-success bt bt1" >حساب سپـرده کوتاه‌مدت✷ 2</button>
+     <div class="myalert" id="bk4" >
+      <table style="text-align:center" >
+       <tr>
+        <th style="width:10px" >
+         <i class="bi-currency-exchange right fs30 red" ></i>
+        </th>
+        <th style="width:130px" >
+     شماره حساب
+        </th>
+        <td></td>
+        <td style="width:150px" >
+        0310519555008
+        </td>
+       </tr>
+       <tr>
+        <th style="width:30px" >
+         <i class="bi-credit-card right fs30 red" ></i>
+        </th>
+        <th style="width:100px" >
+     کارت
+        </th>
+        <td>
+         <i class="bi-emoji-smile-fill green fs25" ></i>
+        </td>
+        <td style="width:200px" >
+     6037-9981-1348-0288
+        </td>
+       </tr>
+      </table>
+      </div>
+	 <div class="btn btn-dark bt bt2" id="btn5"  ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+         <button class="btn btn-info bt bt1" >حساب سپـرده کوتاه‌مدت✷ 3</button>
+    <div class="myalert" id="bk5" >
+     <table style="text-align:center" >
+      <tr>
+       <th style="width:10px" >
+        <i class="bi-currency-exchange right fs30 red" ></i>
+       </th>
+       <th style="width:130px" >
+    شماره حساب
+       </th>
+       <td></td>
+       <td style="width:150px" >
+       0310519555008
+       </td>
+      </tr>
+      <tr>
+       <th style="width:30px" >
+        <i class="bi-credit-card right fs30 red" ></i>
+       </th>
+       <th style="width:100px" >
+    کارت
+       </th>
+       <td>
+        <i class="bi-emoji-smile-fill green fs25" ></i>
+       </td>
+       <td style="width:200px" >
+    6037-9981-1348-0288
+       </td>
+      </tr>
+     </table>
+          
+     </div>
+	 <div class="btn btn-dark bt bt2" id="btn6"  ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+         <button class="btn btn-dark bt bt1" >حساب سپـرده کوتاه‌مدت✷ 4</button>
+    <div class="myalert" id="bk6" >
+     <table style="text-align:center" >
+      <tr>
+       <th style="width:10px" >
+        <i class="bi-currency-exchange right fs30 red" ></i>
+       </th>
+       <th style="width:130px" >
+    شماره حساب
+       </th>
+       <td></td>
+       <td style="width:150px" >
+       0310519555008
+       </td>
+      </tr>
+      <tr>
+       <th style="width:30px" >
+        <i class="bi-credit-card right fs30 red" ></i>
+       </th>
+       <th style="width:100px" >
+    کارت
+       </th>
+       <td>
+        <i class="bi-emoji-smile-fill green fs25" ></i>
+       </td>
+       <td style="width:200px" >
+    6037-9981-1348-0288
+       </td>
+      </tr>
+     </table>
+          
+     </div>
+	<div class="line" >
+	حساب‌های ارزی
+	</div>
+	 <div class="btn btn-dark bt bt2" id="btn7"  ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+         <button class="btn btn-success bt bt1" >حساب ارزی دلار</button>
+    <div class="myalert" id="bk7" >
+     <table style="text-align:center" >
+      <tr>
+       <th style="width:10px" >
+        <i class="bi-currency-exchange right fs30 red" ></i>
+       </th>
+       <th style="width:130px" >
+    شماره حساب
+       </th>
+       <td></td>
+       <td style="width:150px" >
+       0310519555008
+       </td>
+      </tr>
+      <tr>
+       <th style="width:30px" >
+        <i class="bi-credit-card right fs30 red" ></i>
+       </th>
+       <th style="width:100px" >
+    کارت
+       </th>
+       <td>
+        <i class="bi-emoji-smile-fill green fs25" ></i>
+       </td>
+       <td style="width:200px" >
+    6037-9981-1348-0288
+       </td>
+      </tr>
+     </table>
+          
+     </div>
+	 <div class="btn btn-dark bt bt2" id="btn8"  ><i class="bi-info-circle-fill fs30 text-warning" style="margin-right:-2px" ></i></div>
+         <button class="btn btn-warning bt bt1" >حساب ارزی یـورو</button>
+    <div class="myalert" id="bk8" >
+     <table style="text-align:center" >
+      <tr>
+       <th style="width:10px" >
+        <i class="bi-currency-exchange right fs30 red" ></i>
+       </th>
+       <th style="width:130px" >
+    شماره حساب
+       </th>
+       <td></td>
+       <td style="width:150px" >
+       0310519555008
+       </td>
+      </tr>
+      <tr>
+       <th style="width:30px" >
+        <i class="bi-credit-card right fs30 red" ></i>
+       </th>
+       <th style="width:100px" >
+    کارت
+       </th>
+       <td>
+        <i class="bi-emoji-smile-fill green fs25" ></i>
+       </td>
+       <td style="width:200px" >
+    6037-9981-1348-0288
+       </td>
+      </tr>
+     </table>
+          
+     </div>
+  </div>
+ </div>
+
+
+
+<hr>
  </center>
  
+ <script type="text/javascript">
+ function bodyfunc() {
+  }
+ 
+ </script>
 </body>
-<script src="data.js" ></script>
-<script src="./../../js/jquery.slim.min.js" ></script>
-<script ;src="./../../js/4/bootstrap.bundle.min.js"></script>
-<script src="./../../js/5/bootstrap.bundle.min.js"></script>
-</html>
